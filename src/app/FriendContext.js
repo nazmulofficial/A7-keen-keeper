@@ -23,12 +23,11 @@ export function FriendProvider({ children }) {
       date: new Date().toLocaleDateString(),
     };
 
-    // SAVE DATA
     setInteractions((prev) => [
       newInteraction,
       ...prev,
     ]);
-    // SHOW TOAST
+
     toast.success(
       `${type} with ${friendName}`
     );

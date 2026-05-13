@@ -33,7 +33,7 @@ export default function Navbar() {
     <nav className="bg-white border-b border-gray-200 px-10 py-2">
       <div className="max-w-8xl mx-auto flex items-center justify-between">
 
-        {/* Logo */}
+      
         <h1 className="text-[34px] font-bold text-[#1f2b3d] tracking-tight">
           Keens<span className="text-[#244D3F]">Keeper</span>
         </h1>
