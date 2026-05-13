@@ -8,14 +8,17 @@ export default function Home() {
   return (
     <>
       <Navbar />
+
       <main className="bg-[#f5f7f6] min-h-screen w-full">
+        
         {/* HERO */}
-        <section className="max-w-8xl mx-auto px-8 py-20 text-center">
-          <h1 className="text-5xl md:text-7xl font-bold text-gray-800 leading-tight">
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 md:py-20 text-center">
+          
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-gray-800 leading-tight">
             Friends to keep close in your life
           </h1>
 
-          <p className="text-gray-500 mt-6 text-lg max-w-3xl mx-auto">
+          <p className="text-gray-500 mt-6 text-base sm:text-lg max-w-3xl mx-auto">
             Your personal shelf of meaningful connections.
             Browse, tend, and nurture the relationships
             that matter most.
@@ -27,48 +30,54 @@ export default function Home() {
           </button>
         </section>
 
-        <section className="max-w-8xl mx-auto px-90 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {/* STATS */}
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
-          <div className="bg-white rounded-2xl p-8 shadow-sm text-center">
-            <h2 className="text-5xl font-bold text-green-900">
-              12
-            </h2>
-            <p className="text-gray-500 mt-3">
-              Total Friends
-            </p>
-          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            
+            <div className="bg-white rounded-2xl p-8 shadow-sm text-center">
+              <h2 className="text-5xl font-bold text-green-900">
+                12
+              </h2>
+              <p className="text-gray-500 mt-3">
+                Total Friends
+              </p>
+            </div>
 
-          <div className="bg-white rounded-2xl p-8 shadow-sm text-center">
-            <h2 className="text-5xl font-bold text-green-900">
-              3
-            </h2>
-            <p className="text-gray-500 mt-3">
-              On Track
-            </p>
-          </div>
+            <div className="bg-white rounded-2xl p-8 shadow-sm text-center">
+              <h2 className="text-5xl font-bold text-green-900">
+                3
+              </h2>
+              <p className="text-gray-500 mt-3">
+                On Track
+              </p>
+            </div>
 
-          <div className="bg-white rounded-2xl p-8 shadow-sm text-center">
-            <h2 className="text-5xl font-bold text-green-900">
-              6
-            </h2>
-            <p className="text-gray-500 mt-3">
-              Need Attention
-            </p>
-          </div>
+            <div className="bg-white rounded-2xl p-8 shadow-sm text-center">
+              <h2 className="text-5xl font-bold text-green-900">
+                6
+              </h2>
+              <p className="text-gray-500 mt-3">
+                Need Attention
+              </p>
+            </div>
 
-          <div className="bg-white rounded-2xl p-8 shadow-sm text-center">
-            <h2 className="text-5xl font-bold text-green-900">
-              12
-            </h2>
-            <p className="text-gray-500 mt-3">
-              Interactions This Month
-            </p>
+            <div className="bg-white rounded-2xl p-8 shadow-sm text-center">
+              <h2 className="text-5xl font-bold text-green-900">
+                12
+              </h2>
+              <p className="text-gray-500 mt-3">
+                Interactions This Month
+              </p>
+            </div>
+
           </div>
         </section>
 
-        <section className="max-w-8xl mx-auto px-90 py-20">
+        {/* FRIENDS */}
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
           
-          <h2 className="text-4xl font-bold text-gray-800 mb-10">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-10">
             Your Friends
           </h2>
 
@@ -80,10 +89,11 @@ export default function Home() {
               />
             ))}
           </div>
+
         </section>
       </main>
 
-      <Footer/>
+      <Footer />
     </>
   );
 }
