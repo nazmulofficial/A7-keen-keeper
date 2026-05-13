@@ -63,7 +63,7 @@ export default function FriendDetails({ params }) {
 
               <div className="mt-4">
                 <span
-                  className={`px-4 py-1 rounded-full text-sm text-white ${
+                  className={`px-4 py-1 rounded-full text-sm text-white flex justify-center items-center uppercase ${
                     friend.status === "overdue"
                       ? "bg-red-500"
                       : friend.status === "almost due"
@@ -75,11 +75,11 @@ export default function FriendDetails({ params }) {
                 </span>
               </div>
 
-              <div className="flex justify-center gap-2 mt-4 flex-wrap">
+              <div className="flex justify-center  gap-2 mt-4 text-2xl flex-wrap">
                 {friend.tags.map((tag, idx) => (
                   <span
                     key={idx}
-                    className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs"
+                    className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-[16px] uppercase"
                   >
                     {tag}
                   </span>
