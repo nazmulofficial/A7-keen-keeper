@@ -7,11 +7,8 @@ import {
   useContext,
   useState,
 } from "react";
-
 const FriendContext = createContext();
-
 export function FriendProvider({ children }) {
-
   const [interactions, setInteractions] =
     useState([]);
 
@@ -19,7 +16,6 @@ export function FriendProvider({ children }) {
     friendName,
     type
   ) => {
-
     const newInteraction = {
       id: Date.now(),
       friendName,
