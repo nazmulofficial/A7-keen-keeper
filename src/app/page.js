@@ -1,7 +1,7 @@
 import friends from "@/data/friends.json";
 import Navbar from "@/components/Navbar";
 import FriendCard from "@/components/FriendCard";
-// import Footer from "@/components/Footer";
+import Footer from "@/components/Footer";
 import { FaPlus } from "react-icons/fa";
 
 export default function Home() {
@@ -83,7 +83,7 @@ export default function Home() {
         </section>
       </main>
 
-      {/* <Footer/> */}
+      <Footer/>
     </>
   );
 }
