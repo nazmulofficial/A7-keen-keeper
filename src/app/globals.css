@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container-custom {
+  width: 90%;
+  max-width: 1400px;
+  margin: auto;
+}
+
+/* Card Hover */
+.friend-card {
+  transition: all 0.3s ease;
+}
+
+.friend-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Status Colors */
+.status-overdue {
+  background-color: #ef4444;
+  color: white;
+}
+
+.status-almost {
+  background-color: #f59e0b;
+  color: white;
+}
+
+.status-track {
+  background-color: #166534;
+  color: white;
+}
+
+/* Footer */
+.footer-bg {
+  background: #184d3b;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem !important;
+  }
+
+  .summary-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
