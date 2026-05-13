@@ -1,19 +1,34 @@
 import "./globals.css";
+
+import { FriendProvider } from "./FriendContext";
 import { Toaster } from "react-hot-toast";
 
-export const metadata = {
-  title: "KeenKeeper",
-  description: "Friend relationship tracker",
-};
-
-export default function RootLayout({ children }) {
+export default function RootLayout({
+  children,
+}) {
   return (
-    <html lang="en">
-      <body>
-   
+    <html lang="en" className="h-full">
+
+      <body className="min-h-screen flex flex-col">
+
+        <FriendProvider>
+
           {children}
 
-        <Toaster />
+        </FriendProvider>
+
+        <Toaster
+          position="top-center"
+          toastOptions={{
+            style: {
+              background: "#1d5a46",
+              color: "#fff",
+              borderRadius: "12px",
+              padding: "14px 18px",
+            },
+          }}
+        />
+
       </body>
     </html>
   );

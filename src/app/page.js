@@ -31,7 +31,7 @@ export default function Home() {
           
           <div className="bg-white rounded-2xl p-8 shadow-sm text-center">
             <h2 className="text-5xl font-bold text-green-900">
-              10
+              12
             </h2>
             <p className="text-gray-500 mt-3">
               Total Friends

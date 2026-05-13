@@ -10,28 +10,28 @@ export default function FriendCard({friend}) {
           className="w-24 h-24 rounded-full object-cover mx-auto"
         />
 
-        <h2 className="text-2xl font-bold mt-5">
+        <h2 className="text-3xl font-bold mt-5">
           {friend.name}
         </h2>
 
-        <p className="text-gray-500 mt-2">
+        <p className="text-gray-500 mt-2 text-[16px]">
           {friend.days_since_contact}d ago
         </p>
 
-        <div className="flex justify-center gap-2 mt-4 flex-wrap">
+        <div className="flex justify-center gap-2 mt-4 flex-wrap ">
           {friend.tags.map((tag, idx) => (
             <span
               key={idx}
-              className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs"
+              className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-[16px] uppercase"
             >
               {tag}
             </span>
           ))}
         </div>
 
-        <div className="mt-5">
+        <div className="mt-5 text-[16px] capitalize">
           <span
-            className={`px-4 py-1 rounded-full text-xs text-white ${
+            className={` px-4 py-1 rounded-full  text-white ${
               friend.status === "overdue"
                 ? "bg-red-500"
                 : friend.status === "almost due"

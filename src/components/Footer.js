@@ -23,22 +23,22 @@ export default function Footer() {
 
         {/* Social */}
         <div className="mt-8">
-          <h3 className="font-semibold mb-5 text-lg">
+          <h3 className="font-semibold mb-5 text-2xl">
             Social Links
           </h3>
 
           <div className="flex justify-center gap-4">
             
-            <button className="w-11 h-11 rounded-full bg-white text-[#1d5a46] flex items-center justify-center hover:scale-110 transition">
-              <FaGithub />
+            <button className="w-16 h-16 rounded-full bg-white text-[#1d5a46] flex items-center justify-center hover:scale-110 transition">
+              <FaGithub size={22} />
             </button>
 
-            <button className="w-11 h-11 rounded-full bg-white text-[#1d5a46] flex items-center justify-center hover:scale-110 transition">
-              <FaFacebookF />
+            <button className="w-16 h-16 rounded-full bg-white text-[#1d5a46] flex items-center justify-center hover:scale-110 transition">
+              <FaFacebookF size={22}/>
             </button>
 
-            <button className="w-11 h-11 rounded-full bg-white text-[#1d5a46] flex items-center justify-center hover:scale-110 transition">
-              <FaXTwitter />
+            <button className="w-16 h-16 rounded-full bg-white text-[#1d5a46] flex items-center justify-center hover:scale-110 transition">
+              <FaXTwitter size={22}/>
             </button>
 
           </div>

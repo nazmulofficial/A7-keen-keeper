@@ -15,22 +15,22 @@ export default function Navbar() {
     {
       name: "Home",
       path: "/",
-      icon: <FaHome size={12} />,
+      icon: <FaHome size={16} className="text-inherit"/>,
     },
     {
       name: "Timeline",
       path: "/timeline",
-      icon: <FaClock size={12} />,
+      icon: <FaClock size={16} className="text-inherit"/>,
     },
     {
       name: "Stats",
       path: "/stats",
-      icon: <FaChartLine size={12} />,
+      icon: <FaChartLine size={16} className="text-inherit" />,
     },
   ];
 
   return (
-    <nav className="bg-white border-b border-gray-200 px-10">
+    <nav className="bg-white border-b border-gray-200 px-10 py-2">
       <div className="max-w-8xl mx-auto flex items-center justify-between">
 
         {/* Logo */}
@@ -44,9 +44,9 @@ export default function Navbar() {
             <Link
               key={link.path}
               href={link.path}
-              className={`flex items-center gap-2 px-4 py-2 rounded-md text-sm font-medium transition ${
+              className={`flex items-center gap-2 px-4 py-2 rounded-md text-1xl font-medium transition ${
                 pathname === link.path
-                  ? "bg-[#184d3b] text-white"
+                  ? "bg-[#d6f840] text-white"
                   : "text-gray-500 hover:bg-gray-100"
               }`}
             >
