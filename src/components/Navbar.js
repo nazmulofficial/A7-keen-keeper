@@ -15,12 +15,12 @@ export default function Navbar() {
     {
       name: "Home",
       path: "/",
-      icon: <FaHome size={16} className="text-inherit"/>,
+      icon: <FaHome size={16} className="text-inherit" />,
     },
     {
       name: "Timeline",
       path: "/timeline",
-      icon: <FaClock size={16} className="text-inherit"/>,
+      icon: <FaClock size={16} className="text-inherit" />,
     },
     {
       name: "Stats",
@@ -30,21 +30,22 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="bg-white border-b border-gray-200 px-10 py-2">
-      <div className="max-w-8xl mx-auto flex items-center justify-between">
-
+    <nav className="bg-white border-b border-gray-200 px-4 sm:px-6 md:px-10 py-2">
       
-        <h1 className="text-[34px] font-bold text-[#1f2b3d] tracking-tight">
+      <div className="max-w-8xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-0">
+
+        <h1 className="text-[28px] sm:text-[34px] font-bold text-[#1f2b3d] tracking-tight">
           Keens<span className="text-[#244D3F]">Keeper</span>
         </h1>
 
         {/* Nav Links */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center flex-wrap justify-center gap-2 sm:gap-3">
+          
           {navLinks.map((link) => (
             <Link
               key={link.path}
               href={link.path}
-              className={`flex items-center gap-2 px-4 py-2 rounded-md text-1xl font-medium transition ${
+              className={`flex items-center gap-2 px-3 sm:px-4 py-2 rounded-md text-sm sm:text-base font-medium transition ${
                 pathname === link.path
                   ? "bg-[#d6f840] text-white"
                   : "text-gray-500 hover:bg-gray-100"
@@ -54,6 +55,7 @@ export default function Navbar() {
               {link.name}
             </Link>
           ))}
+
         </div>
       </div>
     </nav>
