@@ -1,6 +1,6 @@
 import friends from "@/data/friends.json";
 import Navbar from "@/components/Navbar";
-// import FriendCard from "@/components/FriendCard";
+import FriendCard from "@/components/FriendCard";
 // import Footer from "@/components/Footer";
 import { FaPlus } from "react-icons/fa";
 
@@ -66,7 +66,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* <section className="max-w-8xl mx-auto px-90 py-20">
+        <section className="max-w-8xl mx-auto px-90 py-20">
           
           <h2 className="text-4xl font-bold text-gray-800 mb-10">
             Your Friends
@@ -80,7 +80,7 @@ export default function Home() {
               />
             ))}
           </div>
-        </section> */}
+        </section>
       </main>
 
       {/* <Footer/> */}
